@@ -37,4 +37,9 @@ public class Application implements CommandLineRunner {
       }
     });
   }
+
+  static {
+      // 跳过Apollo Meta Server服务发现
+      System.setProperty("apollo.config-service", "localhost:18080");
+  }
 }

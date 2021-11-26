@@ -19,6 +19,10 @@ Date: 2018-06-25 17:56:16
 
 */
 
+CREATE DATABASE IF NOT EXISTS test2 DEFAULT CHARACTER SET = utf8;
+
+USE test2;
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -29,7 +33,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
